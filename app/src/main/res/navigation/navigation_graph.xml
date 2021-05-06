@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_host_fragment"
+    app:startDestination="@id/mapsFragment">
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.example.spots_tour.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_mapsFragment_to_videoForMapFragment"
+            app:destination="@id/videoForMapFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createVideoFragment"
+        android:name="com.example.spots_tour.CreateVideoFragment"
+        android:label="fragment_create_video"
+        tools:layout="@layout/fragment_create_video" />
+    <fragment
+        android:id="@+id/aboutUsFragment"
+        android:name="com.example.spots_tour.AboutUsFragment"
+        android:label="fragment_about_us"
+        tools:layout="@layout/fragment_about_us" />
+    <fragment
+        android:id="@+id/videoForMapFragment"
+        android:name="com.example.spots_tour.VideoForMapFragment"
+        android:label="fragment_video_for_map"
+        tools:layout="@layout/fragment_video_for_map" />
+</navigation>

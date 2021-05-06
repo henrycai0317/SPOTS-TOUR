@@ -1,0 +1,28 @@
+<!--抽屜上方標題區塊的版面配置-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="172dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ImageView
+        android:layout_width="163dp"
+        android:layout_height="75dp"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:onClick="ClickLogo"
+        android:src="@drawable/ac_logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="SPOTS-TOUR"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="#636363"/>
+
+
+
+
+</LinearLayout>
